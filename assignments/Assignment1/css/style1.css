@@ -1,0 +1,42 @@
+header{
+	
+	background-color:#ADD8E6;
+
+}
+nav li{
+	display: inline;
+	padding:10px;
+	
+}
+nav a{
+	color:yellow;
+}
+a:hover{
+	color:black;
+}
+.page a:hover{
+	color:yellow;
+} 
+a{
+	text-decoration: none;
+
+}
+.container_12{
+	background-color:;
+	overflow: hidden;
+	
+}
+.primary{
+
+	background-color: yellow;
+}
+.primary h2{
+	margin-right: 0px;
+}
+
+section a:hover{
+	opacity: 0.4;
+}
+section h3{
+	font-family:'Indie Flower', cursive;
+}
