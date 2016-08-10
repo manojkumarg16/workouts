@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Movie Details</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+	</head>
+<body>
+	<<div class="navbar navbar-default navbar-fixed-top" id="header">
+		<h1>Movie Search</h1>
+	</div>
+	<div class="searching">
+		<form class="navbar-form pull-left">
+			<input type="text" id="find" class="form-control" placeholder="Search">
+			<button type="button" class="btn btn-default" id="search" ><span class="glyphicon glyphicon-search"></span></button>
+		</form>
+	</div>
+	<div class="main" id="detail">
+		<template id="temp">
+			<div class="col-sm-8" id="poster">
+				<p><img src={{Poster}}></img></p>
+			</div>
+			<div class="col-sm-4" id="texts">
+				<p><strong>MovieName:</strong>{{Title}}</p>
+				<p><strong>MovieIMDB:</strong>{{imdbID}}</p>
+				<p><strong>MovieName:</strong>{{Year}}</p>
+			</div>
+		</template>
+	</div>
+	<div class="col-sm-12" id="link">
+		<h3><a href="#">NextPage</a></h3>
+	</div>
+	<footer>
+			<div class="row">
+			
+				<div class="col-sm-5" id="first">
+					<p>Copyright © 2013 </p>
+					<p>Rights Reserved by MovieBuff website</p>
+					<p>Movies.com</p>
+				</div> 	
+				<div class="col-sm-4" id="second">
+					<h4><Strong>AboutUs</Strong></h4>
+					<p>The big advantage of this system is that the setter always has 3 hitters to vary sets with. If the setter does this well, the opponent's middle blocker may not have enough time to block with the outside blocker, increasing the chance for the attacking team to make a point.</p>
+				</div>
+				<div class="col-sm-3">
+					<h4><strong>Reach Us At</strong></h4>
+					<ul class="icons">
+						<li><a href="#"><img src="images/Fbb.png">Facebook</a></li>
+						<li><a href="#"><img src="images/twitter.png">Twitter</a></li>
+						<li><a href="#"><img src="images/gmail.png">Google+</a></li>
+					</ul>
+				</div>
+			</div>
+			</footer>
+
+</body>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.js"></script>
+</html>

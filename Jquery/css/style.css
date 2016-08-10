@@ -1,0 +1,49 @@
+.searching{
+	padding-left:500px;
+	margin-top:140px;
+	margin-bottom: 40px;
+}
+.main{
+	margin-top: 80px;
+	background-color:#FFFFFF; 
+}
+#header h1{
+	text-align: center;
+	color: white;
+	padding-top: 0px;
+}
+#header{
+	height: 70px;
+	background-color: black;
+}
+.link h3{
+	
+}
+body{
+	background-color: #413D3D;
+}
+#texts{
+	margin-top: 40px;
+	color:#FFFFFF;
+}
+#poster{
+	margin-top: 40px;
+}
+footer{
+   background-color: ;
+   color:#FFFFFF;
+}
+#first p{
+   margin-top: 20px;
+}
+.icons a img{
+   width: 20px;
+   height: 20px;
+}
+.icons{
+   padding-top: 15px;
+   text-decoration: none;
+}
+.row{
+	margin-top: 300px;
+}
