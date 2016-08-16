@@ -1,0 +1,219 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:    Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+.well .page-header{
+   margin-top: 0px;
+}
+.well .page-header h1{
+   margin-top: 0px;
+}
+body{
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizelegibility;
+}
+.panel{
+   background-color: black;
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+#transparent{
+   text-align: center;
+   padding-bottom: 450px;
+}
+#searchinput{
+   width:200px;
+}
+.navbar-brand{
+   padding: 13px 15px;
+}
+.navbar{
+   background-color: #F4BB4A;
+}
+.tab-pane img{
+   margin: 20px 0 20px;
+}
+.tab-pane{
+   text-align: center;
+}
+.tab-pane p{
+   margin-right: 0px;
+}
+#bigcallout{
+   margin-top: 10px;
+}
+.navbar li .active{
+   color: red;
+}
+.list-group{
+   border-radius: 5px 5px 5px 5px;
+}  
+.list-header{
+   color:#FFFFFF;
+} 
+.list-group a:hover{
+   background-color: #676161;
+   color: #FFFFFF;
+}
+footer{
+   background-color: #B9B5B5;
+}
+#first p{
+   margin-top: 20px;
+}
+.icons a img{
+   width: 20px;
+   height: 20px;
+}
+.icons{
+   padding-top: 15px;
+   text-decoration: none;
+}
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#mycarousel .item{
+   height: 400px;
+}
+#mycarousel{
+   margin-top: 60px;
+}
+.carousel-caption h3{
+   font-size: 24px;
+}
+.carousel-caption{
+   font-size: 16px;
+   color:black;
+}
+#slide1{
+   background: url('../../images/image1-medium.jpg') top center no-repeat;
+}
+#slide2{
+   background: url('../../images/image2-medium.jpg') top center no-repeat;
+}
+#slide3{
+   background: url('../../images/image3-medium.jpg') top center no-repeat;
+}
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.well{
+   margin:0px;
+}
+.alert{
+   margin-top: 10px;
+   display: none;
+}
+#features{
+   margin-top: 10px;
+   text-align: center;
+}
+#features img{
+   margin: 0 0 20px;
+}
+
+.panel p{
+   color: #D7DDF9;
+}
+#featuresheading h3{
+   margin-left: 20px;
+   color:#DCD8D8;
+}
+.modal-body button{
+   margin-top: 10px;
+}
+.tab-pane p{
+   margin-top: 10px;
+   color: #D7DDF9;
+}
+.panel-body a{
+   font-size: 18px;
+}
+.panel-heading h3{
+   font-size: 25px;
+}
+.carousel-inner h1{
+   color:#F9586B;
+}
+.carousel-inner p{
+   color:#F9586B;
+   font-size: 18px;
+}
+#slide3 p{
+   color: black;
+}
+body{
+    background-color: black;
+   font-family: 'Slabo 27px', serif;
+   font-size: 17px;
+}
+
+
+ul.icons{
+   list-style: none;
+   padding: 0;
+}
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+   
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) 
+{
+   #mycarousel.item{
+      height: 310px;
+   }
+   #slide1{
+      background: url('../../images/image1-small.jpg') top center no-repeat;
+   }
+   #slide2{
+      background: url('../../images/image2-small.jpg') top center no-repeat;
+   }
+   #slide3{
+      background: url('../../images/image3-small.jpg') top center no-repeat;
+   }
+   
+}
+
+/* Large desktop */
+@media (min-width: 1200px) 
+{
+   #mycarousel.item{
+      height: 500px;
+   }
+   #slide1{
+      background: url('../../images/image1-large.jpg') top center no-repeat;
+   }
+   #slide2{
+      background: url('../../images/image2.large.jpg') top center no-repeat;
+   }
+   #slide3{
+      background: url('../../images/image3-large.jpg') top center no-repeat;
+   }
+}
