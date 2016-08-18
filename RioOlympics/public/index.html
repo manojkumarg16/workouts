@@ -1,0 +1,248 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Rio Olympics</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+</head>
+<body>
+		<div class="navbar navbar-default navbar-fixed-top" id="header">
+			<form class="navbar-form pull-left" id="form">
+				<input type="text" class="form-control" placeholder="search this site" id="find">
+				<button type="button" class="btn btn-default" id="search"><span class="glyphicon glyphicon-search"></span></button>
+			</form>
+		</div>
+		<div class="container_12">
+			<div class="col-sm-3" id="add">
+				<p><a role="button" class="btn btn-warning" data-target="#mymodal1" data-toggle="modal" ><span class="glyphicon glyphicon-plus"></span>Add Player</a></p>
+							<div class="modal fade" id="mymodal1">
+								<div class="modal-dialog">
+									<div class="modal-content">
+									<div class="modal-header">
+										<h2><strong>Add player</strong></h2>
+										<button class="close" data-dismiss="modal">&times;</button>
+									</div>
+										<div class="modal-body">
+											<form class="form-horizontal" id="forms"> 
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">ChestNo</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="chestno" placeholder="ChestNumber" type="number" name="chestno" required>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Age</label>
+													<div class="col-lg-10">
+														<input class="form-control" placeholder="Age" id="age"  type="number" name="age" required min="15" max="34">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Name</label>
+													<div class="col-lg-10">
+														<input class="form-control" type="text" name="name" required placeholder="PlayerName" id="inputName" >
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">D.O.B</label>
+													<div class="col-lg-10">
+														<input class="form-control" placeholder="YYYY-MM-DD" id="inputDOB" name="DOB" required  type="date" min="1986-01-1" max="2000-01-1">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Gender</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputGender" name="gender" required placeholder="male/female" type="text">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Email</label>
+													<div class="col-lg-10">
+														<input class="form-control" placeholder="xyz@xyz.com" id="inputEmail" name="email" required type="email">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Country</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputCountry" name="country" required placeholder="Country" type="text">
+													</div>
+												</div>
+												<div class="modal-footer">
+											<button class="btn btn-warning" data-dismiss="modal">&times;<span class="glyphicon glyphicon-remove-sign"></span>Cancel</button>
+											
+											<input type="submit" data-toggle="modal" class="btn btn-success" id="save" value="Submit">
+										</div>
+											</form>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+			<div class="col-sm-3">
+				<p><button class="btn btn-default" id="view"><span class="glyphicon glyphicon-eye-open"></span>View All</button></p>
+			</div>
+			<div class="col-sm-6">
+				<p id="rio">Rio Olympics 2016</p>
+			</div>
+		</div>
+		<div class="content" id="display">
+				<table class="table table-bordered" id="tableview">
+					<thead>
+						<tr id="head">
+							<th align="center"><strong>ID</strong></th>
+							<th align="center"><strong>ChestNo</strong></th>
+							<th align="center"><strong>Age</strong></th>
+							<th align="center"><strong>Name</strong></th>
+							<th align="center"><strong>DOB</strong></th>
+							<th align="center"><strong>Gender</strong></th>
+							<th align="center"><strong>Email</strong></th>
+							<th align="center"><strong>Country</strong></th>
+							<th align="center">Features to do</th>
+		 				</tr>
+					</thead>			
+					<template id="template">
+						<tbody id="body">
+						<tr data-id={{id}}>
+							<td align="center">{{id}}</td>
+							<td align="center">
+								<span class="noedit chestno">{{chestno}}</span>
+								<input class="edit chestno" />
+							</td>
+							<td align="center">
+								<span class="noedit age">{{age}}</span>
+								<input class="edit age" />
+							</td>
+							<td align="center">
+								<span class="noedit name">{{name}}</span>
+								<input class="edit name" />
+							</td>
+							<td align="center">
+								<span class="noedit dob">{{DOB}}</span>
+								<input class="edit dob" />
+							</td>
+							<td align="center">
+								<span class="noedit gender">{{gender}}</span>
+								<input class="edit gender"/>
+							</td>
+		 					<td align="center">
+		 						<span class="noedit email">{{email}}</span>
+								<input class="edit email"/>
+							</td>
+							<td align="center">
+								<span class="noedit country">{{country}}</span>
+								<input class="edit country" />
+							</td>
+ 							<td align="center">
+ 								<button type="button" class="btn btn-info noedit" update-id="{{id}}"><span class="glyphicon glyphicon-pencil"></span>Update</button>
+ 								<button type="button" class="btn btn-success edit" id="save"><span class="glyphicon glyphicon-ok"></span>Save</button>
+ 								<button type="button" class="btn btn-warning edit"  id="cancel"><span class="glyphicon glyphicon-remove"></span></span>Cancel</button>
+ 							</td>
+							<td><button class="btn btn-danger" id="delete" delete-id="{{id}}"><span class="glyphicon glyphicon-minus"></span>Delete</button>
+							</td>
+						</tr>
+					</tbody>
+				</template>
+			</table>
+		</div>
+		<div>
+			<h4 class="pages"></h4>
+		</div>
+		<div class="pagebuttons">
+			<div class="col-sm-6">
+				<button class="btn btn-primary" id="previous"><span class="glyphicon glyphicon-chevron-left"></span>Prev Page</button>
+			</div>
+			<div class="col-sm-6">
+				<button class="btn btn-primary pull-right" id="next">Next Page<span class="glyphicon glyphicon-chevron-right"></span></button>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- <script src="js/jquery-3.1.0.js"></script>  -->
+	
+	
+	<!-- <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script> -->
+	
+
+	<!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+	
+	   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.js"></script>
+	<script src="includes/js/script.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<!--<div class="modal fade" id="mymodal1">
+ 								<div class="modal-dialog">
+									<div class="modal-content">
+									<div class="modal-header">
+										<h2><strong>Update Player Details</strong></h2>
+										<button class="close" data-dismiss="modal">&times;</button>
+									</div>
+										 <div class="modal-body">
+											<form class="form-horizontal" id="forms"> 
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputchest">ChestNo</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="chestno1" placeholder="0000" type="text">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputage">Age</label>
+													<div class="col-lg-10">
+														<input class="form-control" placeholder="00" id="age1"  type="text">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Name</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputName1" placeholder="PlayerName" type="text">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputdob">D.O.B</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputDOB1" placeholder="YYYY-MM-DD" type="text">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputgender">Gender</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputGender1" placeholder="Male/Female" type="text">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputemail">Email</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputEmail1"  placeholder="xyz@gmail.com" type="text">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputcountry">Country</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputCountry1" placeholder="India" type="text">
+													</div>
+												</div>
+											</form>
+										</div>
+										<div class="modal-footer">
+											<button class="btn btn-warning" data-dismiss="modal">&times;<span class="glyphicon glyphicon-remove"></span>Cancel</button>
+											<button class="btn btn-Success" id="update"><span class="glyphicon glyphicon-pencil"></span>Update</button>
+										</div>
+									</div>
+								</div>
+							</div> -->

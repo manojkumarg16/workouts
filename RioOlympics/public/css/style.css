@@ -1,0 +1,44 @@
+#header{
+	padding-left:300px;
+	margin-bottom: 40px;
+	height: 100px;
+	background-color: #A2FA79;
+}
+#form{
+	margin-top:40px;
+}
+.container_12{
+	margin-top: 120px;
+}
+.modal-body button{
+   margin-top: 10px;
+}
+#add{
+	padding-left: 200px;
+}
+.pages{
+	text-align: center;
+}
+#rio{
+	font-size: 56px;
+	font-family: 'Ravi Prakash', cursive;
+}
+#tableview{
+	background-color: #000000;
+	color:#FFFFFF;
+}
+#head{
+	background-color: #FAB774;
+}
+.edit{
+	color: #000000;
+}
+tr td.edit .noedit{
+	display:none;
+}
+tr td .edit{
+	display:none;
+}
+tr td.edit .edit{
+	display: initial;
+}
